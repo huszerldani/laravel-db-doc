@@ -9,6 +9,12 @@
 			"email":"huszerldani@gmail.com"
 		}
 	],
+	"keywords": [
+	    "laravel",
+	    "database",
+	    "documentation",
+	    "doc"
+	],
 	"config":{
 		"preferred-install":"master"
 	},
