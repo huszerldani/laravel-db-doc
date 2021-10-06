@@ -13,7 +13,7 @@ Before generating your documentation, please check the **DB_DATABASE** env varia
 
 ## Publishing config and view file
 
-You can modify the configuration file or the view file for generating unique documentation.
+You can modify the configuration file or the view file to generate unique documentation.
 
 To copy the config file (**db_doc.php**) and the view file (**views/vendor/db_doc/database_doc.blade.php**), please use the vendor publish artisan command:
 ```bash
