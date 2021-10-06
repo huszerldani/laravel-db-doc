@@ -1,0 +1,32 @@
+{
+	"name":"huszerldani/laravel-db-doc",
+	"description":"Generate Database documentation in markdown",
+	"type":"library",
+	"license":"MIT",
+	"authors":[
+		{
+			"name":"huszerldani",
+			"email":"huszerldani@gmail.com"
+		}
+	],
+	"config":{
+		"preferred-install":"master"
+	},
+	"minimum-stability":"dev",
+	"prefer-stable":true,
+	"require":{
+
+	},
+	"autoload":{
+		"psr-4":{
+			"Pinasen\\DbDoc\\":"src/"
+		}
+	},
+	"extra":{
+		"laravel":{
+			"providers":[
+				"Pinasen\\DbDoc\\DbDocServiceProvider"
+			]
+		}
+	}
+}
