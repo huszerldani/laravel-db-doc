@@ -2,6 +2,8 @@
 
 With this package you can easily create a markdown database documentation
 
+Tested on Laravel 6, 7, 8
+
 ## Installing
 
 ```bash
