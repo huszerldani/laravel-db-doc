@@ -15,7 +15,7 @@
 Key | Comment | Column | Data type | Null | Extra
 :---: | --- | --- | --- | :---: | :---:
 @foreach($table['columns'] as $column)
- {{ ($column->Key === '') ? '-' : $column->Key }} | {{ ($column->Comment === '') ? '-' : $column->Comment }} | {{ $column->Field }} | {{ ($column->Type === '') ? '-' : $column->Type }} | {{ ($column->Null === 'YES') ? '✔️' : ' - ' }} | {{ ($column->Extra === 'auto_increment') ? 'AI' : $column->Extra }} |
+ {{ ($column->Key === '') ? ' . ' : $column->Key }} | {{ ($column->Comment === '') ? ' . ' : $column->Comment }} | {{ $column->Field }} | {{ ($column->Type === '') ? ' . ' : $column->Type }} | {{ ($column->Null === 'YES') ? '✔️' : ' . ' }} | {{ ($column->Extra === 'auto_increment') ? 'AI' : $column->Extra }} |
 @endforeach
 
 @if($table['indexes'])
@@ -24,7 +24,7 @@ Key | Comment | Column | Data type | Null | Extra
 Column | Key name | Unique | Comment | Null |
 --- | --- | :---: | --- | :---:
 @foreach($table['indexes'] as $index)
- {{ ($index->Column_name === '') ? '-' : $index->Column_name }} | {{ $index->Key_name }} | {{ ($index->Non_unique === 0) ? '✔' : ' - ' }} | {{ ($index->Index_comment === '') ? '-' : $index->Index_comment }} | {{ ($index->Null === 'YES') ? '✔' : ' - ' }} |
+ {{ ($index->Column_name === '') ? ' . ' : $index->Column_name }} | {{ $index->Key_name }} | {{ ($index->Non_unique === 0) ? '✔' : ' . ' }} | {{ ($index->Index_comment === '') ? ' . ' : $index->Index_comment }} | {{ ($index->Null === 'YES') ? '✔' : ' . ' }} |
 @endforeach
 @endif
 ---
