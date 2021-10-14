@@ -38,15 +38,15 @@ class DbDocGenerator extends Controller
 		$tablesFormatted = [];
 		foreach($tables as $table) {
 			$tableFormatted = [
-				"name" => $table->TABLE_NAME,
-				"comment" => $table->TABLE_COMMENT,
+				"name" => $table->table_name,
+				"comment" => $table->table_comment,
 			];
 
-			$columns = self::getColumnInformations($table->TABLE_NAME);
+			$columns = self::getColumnInformations($table->table_name);
 			$tableFormatted['columns'] = $columns;
 
 			if ($getIndexes) {
-				$indexes = self::getIndexes($table->TABLE_NAME);
+				$indexes = self::getIndexes($table->table_name);
 				$tableFormatted['indexes'] = $indexes;
 			}
 
